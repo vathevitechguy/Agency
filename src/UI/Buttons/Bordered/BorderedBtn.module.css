@@ -1,0 +1,18 @@
+.BorderlessBtn {
+  width: 138px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: Bold;
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.548);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.BorderlessBtn:hover {
+  background-color: #ef6d58;
+  border: none;
+  color: #fff !important;
+}
