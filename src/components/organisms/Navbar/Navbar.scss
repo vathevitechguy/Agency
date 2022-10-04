@@ -1,0 +1,86 @@
+.Navbar {
+  transform: translateY(-10px);
+  z-index: 10;
+
+  &__logo {
+    float: left;
+    height: 60px;
+  }
+  &__btn {
+    display: block;
+    float: right;
+    margin: 30px 0;
+  }
+  &__wrapper {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+  }
+  @media (max-width: 768px) {
+    &__wrapper {
+      width: 90%;
+    }
+  }
+  @media (max-width: 638px) {
+    &__wrapper {
+      width: 100%;
+    }
+  }
+
+  &__wrapper ul {
+    display: inline-block;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+  }
+  @media (max-width: 640px) {
+    &__wrapper > ul {
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+  @media (orientation: landscape) {
+    &__wrapper ul {
+      display: inline-block;
+    }
+    &__btn {
+      display: block;
+    }
+  }
+
+  &__wrapper li {
+    display: inline-block;
+  }
+  &__wrapper li a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 28px 45px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 640px) {
+  .Navbar {
+    transform: translateY(0);
+  }
+  .NavbarMenu {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    height: 23px;
+    width: 27px;
+    z-index: 12;
+  }
+}

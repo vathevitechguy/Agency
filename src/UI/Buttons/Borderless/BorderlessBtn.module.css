@@ -1,0 +1,12 @@
+.BorderlessBtn {
+  width: 138px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: Bold;
+  color: #fff;
+  background-color: #ef6d58;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

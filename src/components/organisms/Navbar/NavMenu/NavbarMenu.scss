@@ -1,0 +1,10 @@
+.NavbarMenu {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .NavbarMenu {
+    display: block;
+    margin-right: 20px;
+    position: absolute;
+  }
+}

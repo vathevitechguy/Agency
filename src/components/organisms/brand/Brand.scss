@@ -1,0 +1,26 @@
+@import './src/scss/lib.scss';
+.BrandLogo {
+  &__logo * {
+    display: inline-block !important;
+  }
+  &__title {
+    font-size: 35px;
+    padding-left: 12px;
+  }
+  &__icon {
+    transform: translate(0, 10px);
+  }
+  @media screen and (max-width: 600px) {
+    &__title {
+      font-size: 22px;
+    }
+    &__icon {
+      transform: translate(0, 16px);
+      margin-left: 25px;
+    }
+    &__icon > img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

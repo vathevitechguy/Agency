@@ -1,0 +1,11 @@
+@import './src/scss/lib.scss';
+.PureBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: $text-light;
+  text-transform: capitalize;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
