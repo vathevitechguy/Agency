@@ -1,0 +1,14 @@
+@import './src/scss/lib.scss';
+.SiteHeader {
+  &__wrapper {
+    background-color: $background-dark;
+    color: $text-light;
+    height: auto;
+  }
+  @media screen and (max-width: 600px) {
+    &__wrapper {
+      height: 1104px;
+      width: 100%;
+    }
+  }
+}

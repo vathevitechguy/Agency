@@ -1,2 +1,10 @@
-@import "./scss/settings/colours.scss";
-@import "./scss/tools/container.scss";
+@import './scss/lib.scss';
+
+@import './scss/elements/html.scss';
+@import './scss/elements/typography.scss';
+
+@import './scss/generic/reset.scss';
+
+body {
+  background-color: #fdf0e9;
+}

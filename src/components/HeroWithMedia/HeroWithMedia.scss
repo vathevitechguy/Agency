@@ -1,0 +1,76 @@
+@import './src/scss/lib.scss';
+.HeaderBody {
+  &__row {
+    padding-top: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  &__col1 {
+    margin: 0 0;
+  }
+  &__col1-wrapper {
+    width: 40%;
+    transform: translateY(-35px);
+  }
+  &__col1-wrapper > h5 {
+    color: $text-accent;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &__col1-wrapper > h1 {
+    margin-top: -5px;
+    line-height: 1em;
+    font-size: 85px;
+  }
+
+  &__col1-wrapper > p {
+    color: $text-light-gray;
+    margin-top: -15px;
+    line-height: 1.5em;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+  }
+
+  &__col1-contactBtn {
+    margin-left: 3rem;
+  }
+  &__col1-review {
+    margin-top: 7rem;
+  }
+  &__col2 > img {
+    width: 100%;
+    max-width: 570px;
+    height: 601.93px;
+  }
+  @media screen and (max-width: 600px) {
+    &__col1-wrapper {
+      padding: 20px;
+      width: 80%;
+      transform: translateY(0);
+    }
+    &__row {
+      display: flex;
+      flex-flow: column-reverse wrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+    &__col2 {
+      margin-top: 30px;
+    }
+    &__col2 > img {
+      width: 100%;
+      max-width: 329px;
+      height: 334px;
+      margin: auto;
+      display: block;
+    }
+    &__col1-wrapper > h1 {
+      margin-top: -5px;
+      line-height: 1em;
+      font-size: 50px;
+    }
+  }
+}

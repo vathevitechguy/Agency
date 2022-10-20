@@ -4,7 +4,10 @@ import Styles from './BorderlessBtn.module.css';
 const BorderlessBtn = (props) => {
   return (
     <React.Fragment>
-      <button type={props.type} className={Styles.BorderlessBtn}>
+      <button
+        type={props.type}
+        className={`${Styles.BorderlessBtn} ${props.customStyle}`}
+      >
         {props.children}
       </button>
     </React.Fragment>

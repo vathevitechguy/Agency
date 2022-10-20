@@ -1,0 +1,70 @@
+@import './src/scss/lib.scss';
+.nav-container {
+  display: none;
+  padding-bottom: 25px;
+}
+.nav-tabs {
+  display: flex !important;
+  font-weight: 600;
+  font-size: 18px;
+  list-style: none;
+}
+
+.nav-tab {
+  cursor: pointer;
+}
+.contactBtn-custom {
+  color: $background-dark !important;
+  border-color: $background-dark !important;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    color: $background-dark;
+    position: fixed;
+    display: flex !important;
+    overflow-y: auto;
+    z-index: 14;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: auto;
+    background: $text-light;
+    box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+    animation: menu-slide-left 0.3s ease;
+  }
+  @keyframes menu-slide-left {
+    0% {
+      transform: translateX(200px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .CloseBtn > svg {
+    position: absolute;
+    margin-top: 25px;
+    transform: translateX(220px);
+    cursor: pointer;
+  }
+
+  .nav-tabs {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .nav-tab:not(:last-child) {
+    padding: 20px 25px;
+    margin: 0;
+    border-right: unset;
+    border-bottom: 1px solid $background-dark;
+  }
+
+  .nav-tab:last-child {
+    padding: 15px 25px;
+  }
+}

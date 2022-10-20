@@ -1,11 +1,107 @@
 @import '../../scss/lib.scss';
 
-// .SiteFooter {
-//     background-color: $dark-blue;
+.SiteFooter {
+    background-color: $background-dark;
+    color: $text-light;
 
-//     &__container {
-//         @include container;
-//         display: grid;
-//         grid-template-columns: 1fr 1fr 1fr 1fr;
-//     }
-// }
+    &__container {
+        @include container;    
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    &__top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 2rem;
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-top: 2rem;
+    }
+
+    &__header {
+        color: $text-accent;
+        font-weight: 400;
+    }
+
+    &__list {
+        padding: 0;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $text-light;
+        line-height: 2rem;
+    }
+
+    &__socials {
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: end;
+    }
+
+    &__button {
+        margin: 0 0.25rem;
+        width: 50px;
+    }
+
+    &__line {
+        width: 100%;
+        height: 1px;
+        background: #3A3C56;
+    }
+
+    &__copyright {
+        color: $text-light-gray;
+        margin: 0.5rem 0;
+
+    }
+
+    &__horizontal-list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    @media screen and (max-width: 375px) {
+        &__top {
+            display: grid;
+            grid-template-columns: 4fr;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    
+        &__bottom {
+            display: grid;
+            grid-template-columns: 4fr;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        &__socials {
+            margin-top: 1rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        &__list {
+            margin-bottom: 2rem;
+        }
+
+        &__horizontal-list {
+            margin-top: 1rem;
+        }
+    }
+
+}

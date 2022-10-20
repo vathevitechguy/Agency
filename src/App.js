@@ -1,31 +1,20 @@
 import './App.scss';
-import SiteHeader from './components/organisms/Headers/SiteHeader/index';
-import SiteHeaderTwo from './components/organisms/Headers/SiteHeaderTwo';
+import SiteHeader from './components/SiteHeader/index';
+// import SiteHeaderTwo from './components/HeroStandard/HeroStandard';
+import ClientCarousel from './components/ClientCarousel/ClientCarousel';
 import SiteFooter from './components/SiteFooter/index';
+import HeroStandard from './components/HeroStandard/HeroStandard';
+import PortfolioCards from './components/PortfolioCards/PortfolioCards';
 
 function App() {
   return (
     <div className="App">
-      <br />
-      <center>
-        <h1>Header 1</h1>
-      </center>
-      <br />
-      <SiteHeader />
-
-      <br />
-      <center>
-        <h1>Header 2</h1>
-      </center>
-      <br />
-      <SiteHeaderTwo
+      <HeroStandard
         logoTitle="Agency"
-        title="About Us"
-        subtitle="Agency provides a full service range including technical skills,
-              design, business understanding."
+        title="Portfolio"
+        subtitle="Agency provides a full service range including technical skills, design, business understanding.."
       />
-
-      {/* <SiteFooter /> */}
+      <PortfolioCards />
     </div>
   );
 }

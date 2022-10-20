@@ -1,4 +1,29 @@
 @mixin container {
-    max-width: 1170px;
+    display: block;
     margin: 0 auto;
-} 
+    padding-right: 23px;
+    padding-left: 23px;
+    max-width: 100%;
+    width: 100%;
+
+    @media only screen and (min-width: $bm-sm) {
+        padding: 0;
+        width: 540px;
+    }
+
+    @media only screen and (min-width: $bm-md) {
+        width: 720px;
+    }
+
+    @media only screen and (min-width: $bm-lg) {
+        width: 960px;
+    }
+
+    @media only screen and (min-width: $bm-xl) {
+        width: 1140px;
+    }
+
+    @media only screen and (min-width: $bm-xxl) {
+        width: 1170px;
+    }
+}

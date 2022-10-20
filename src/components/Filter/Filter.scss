@@ -1,0 +1,55 @@
+@import './src/scss/lib.scss';
+.Filter {
+  &__mobile {
+    display: none;
+    margin: 32px 0 48px;
+  }
+  &__mobile > select {
+    width: 100%;
+    max-width: 375px;
+    height: 48px;
+    padding-right: 190px;
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #f3d1bf;
+    border-radius: 6px;
+    outline: none;
+    margin: auto;
+  }
+  // &__mobile > select > option {
+  //   position: absolute;
+  //   background-color: DodgerBlue;
+  //   top: 100%;
+  //   left: 0;
+  //   right: 0;
+  //   z-index: 99;
+  // }
+  &__ul {
+    text-align: center;
+    padding: 38px 0 38px;
+    display: block;
+  }
+  &__ul > li {
+    display: inline-block;
+    margin: 30px;
+    font-size: 16px;
+    color: rgba(57, 20, 0, 0.64);
+    cursor: pointer;
+  }
+}
+
+.active {
+  color: #391400 !important;
+}
+
+@media only screen and (max-width: $bm-sm) {
+  .Filter {
+    &__ul {
+      display: none;
+    }
+    &__mobile {
+      display: flex;
+    }
+  }
+}

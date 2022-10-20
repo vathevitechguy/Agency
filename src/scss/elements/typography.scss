@@ -1,0 +1,57 @@
+@import '../lib.scss';
+
+h1 {
+    @include headings;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -0.002778em;
+}
+
+h2 {
+    @include headings;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.001786em;
+}
+
+h3 {
+    @include headings;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+
+h4 {
+    @include headings;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+h5 {
+    @include headings;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.1875em;
+    text-transform: uppercase;
+    color: $text-accent;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}

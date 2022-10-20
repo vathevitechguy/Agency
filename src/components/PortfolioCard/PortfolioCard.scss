@@ -1,0 +1,100 @@
+@import './src/scss/lib.scss';
+.PortfolioCard {
+  margin: 0 0 32px 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  &--default {
+    width: 370px;
+    height: 416px;
+    top: 576px;
+  }
+  &--full {
+    width: 1170px;
+    height: 720px;
+    top: 576px;
+  }
+  &--medium {
+    width: 570px;
+    height: 416px;
+    left: 135px;
+    top: 1328px;
+  }
+  &__tag {
+    position: absolute;
+    width: auto;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 19px;
+    transform: translateY(256px);
+    margin-left: 48px;
+  }
+  &__tag > p {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 4px 15px 5px 15px;
+    color: #391400;
+  }
+  &--default > h3,
+  &--full > h3,
+  &--medium > h3 {
+    // &__full > h3 {
+    font-family: 'Epilogue';
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fff;
+    transform: translateY(317px);
+    margin: 0 0 0 48px;
+  }
+
+  &--full > h3 {
+    transform: translateY(608px);
+  }
+  &--full > &__tag {
+    transform: translateY(544px);
+  }
+}
+
+@media only screen and (max-width: $bm-md) {
+  .PortfolioCard {
+    // h3 {
+    //   color: red;
+    // }
+    &--full {
+      width: 570px;
+      height: 416px;
+    }
+    &--full > h3 {
+      transform: translateY(317px);
+    }
+    &--full > &__tag {
+      transform: translateY(256px);
+    }
+  }
+}
+
+@media only screen and (max-width: $bm-sm) {
+  .PortfolioCard {
+    &--full,
+    &--medium {
+      width: 370px;
+      height: 416px;
+      top: 576px;
+    }
+    &--full > h3,
+    &--medium > h3 {
+      transform: translateY(317px);
+    }
+    &--full > &__tag {
+      transform: translateY(256px);
+    }
+  }
+}

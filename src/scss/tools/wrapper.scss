@@ -1,0 +1,16 @@
+@import '../settings/colours.scss';
+
+@mixin wrapper {
+    overflow-x: hidden;
+    width: 100%;
+
+    &--light {
+        background-color: $background-light;
+        color: $text-dark;
+    }
+
+    &--dark {
+        background-color: $background-dark;
+        color: $text-light;
+    }
+}
