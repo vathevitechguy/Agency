@@ -2,6 +2,7 @@ import React from 'react';
 import Styles from './BorderlessBtn.module.css';
 
 const BorderlessBtn = (props) => {
+  const bgColor = props.setBgColor;
   return (
     <React.Fragment>
       <button

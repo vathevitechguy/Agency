@@ -1,5 +1,7 @@
 .BorderlessBtn {
-  width: 138px;
+  width: auto;
+  padding: 18px 23.73px 16px 23.73px;
+  line-height: 14px;
   height: 48px;
   font-size: 14px;
   font-weight: Bold;

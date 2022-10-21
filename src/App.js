@@ -5,6 +5,7 @@ import ClientCarousel from './components/ClientCarousel/ClientCarousel';
 import SiteFooter from './components/SiteFooter/index';
 import HeroStandard from './components/HeroStandard/HeroStandard';
 import PortfolioCards from './components/PortfolioCards/PortfolioCards';
+import CTA from './components/CTA/CTA';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         subtitle="Agency provides a full service range including technical skills, design, business understanding.."
       />
       <PortfolioCards />
+      <CTA />
+      <SiteFooter />
     </div>
   );
 }
