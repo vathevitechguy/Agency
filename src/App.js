@@ -17,7 +17,7 @@ function App() {
       />
       <PortfolioCards />
       <CTA />
-      <SiteFooter />
+      {/* <SiteFooter /> */}
     </div>
   );
 }

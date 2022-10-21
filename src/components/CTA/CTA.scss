@@ -65,6 +65,19 @@
         width: 100%;
         margin: 20px 0 25px;
       }
+      &__col1 > h1 {
+        font-size: 40px;
+        line-height: 48px;
+        width: 274px;
+        height: 144px;
+      }
+      &__col1 > p {
+        max-width: 273px;
+        height: 127px;
+
+        font-size: 16px;
+        line-height: 32px;
+      }
       &__col2 {
         width: 100%;
         margin-top: 3px;
