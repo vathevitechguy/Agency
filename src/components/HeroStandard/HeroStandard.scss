@@ -9,9 +9,9 @@
     margin: auto;
   }
   &__body > h1 {
-    font-size: 60px;
+    font-size: 72px;
     text-align: center;
-    margin: 20px 0 0;
+    margin: 30px 0 0;
   }
   &__subtitle {
     width: 40%;
@@ -19,20 +19,32 @@
   }
   &__subtitle > p {
     text-align: center;
-    line-height: 1.5em;
-    font-size: 20px;
-    font-weight: lighter;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
     color: $text-light-gray;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $bm-xl) {
     &__wrapper {
       width: 100%;
     }
     &__body {
       padding: 95px;
     }
+    &__body > h1 {
+      font-size: 56px;
+    }
+    &__subtitle > p {
+      margin-top: 12px;
+    }
     &__subtitle {
       width: 100%;
     }
   }
+  // @media screen and (max-width: $bm-sm) {
+  //   &__body > h1 {
+  //     // margin: 0;
+  //   }
+  // }
 }

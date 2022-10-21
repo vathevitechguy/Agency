@@ -10,7 +10,7 @@
   &__icon {
     transform: translate(0, 10px);
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $bm-xl) {
     &__title {
       font-size: 22px;
     }

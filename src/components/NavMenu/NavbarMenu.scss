@@ -1,7 +1,9 @@
+@import './src/scss/lib.scss';
 .NavbarMenu {
   display: none;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: $bm-lg) {
   .NavbarMenu {
     display: block;
     margin-right: 20px;

@@ -62,12 +62,23 @@
     transform: translateY(544px);
   }
 }
+@media only screen and (max-width: $bm-xl) {
+  .PortfolioCard {
+    &--full {
+      width: 570px;
+      height: 416px;
+    }
+    &--full > h3 {
+      transform: translateY(317px);
+    }
+    &--full > &__tag {
+      transform: translateY(256px);
+    }
+  }
+}
 
 @media only screen and (max-width: $bm-md) {
   .PortfolioCard {
-    // h3 {
-    //   color: red;
-    // }
     &--full {
       width: 570px;
       height: 416px;

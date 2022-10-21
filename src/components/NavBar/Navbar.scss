@@ -1,5 +1,6 @@
+@import './src/scss/lib.scss';
 .Navbar {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   z-index: 10;
 
   &__logo {
@@ -9,19 +10,19 @@
   &__btn {
     display: block;
     float: right;
-    margin: 30px 0;
+    margin: 20px 0;
   }
   &__wrapper {
     margin: auto;
     text-align: center;
     width: 80%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: $bm-xl) {
     &__wrapper {
       width: 90%;
     }
   }
-  @media (max-width: 638px) {
+  @media (max-width: $bm-xl) {
     &__wrapper {
       width: 100%;
     }
@@ -33,7 +34,7 @@
     transition: transform 0.5s ease-out;
     -webkit-transition: transform 0.5s ease-out;
   }
-  @media (max-width: 640px) {
+  @media (max-width: $bm-xl) {
     &__wrapper > ul {
       display: none;
     }
@@ -53,6 +54,7 @@
   &__wrapper li {
     display: inline-block;
   }
+
   &__wrapper li a {
     color: #fff;
     display: block;
@@ -69,7 +71,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $bm-xl) {
   .Navbar {
     transform: translateY(0);
   }
