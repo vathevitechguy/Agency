@@ -1,0 +1,36 @@
+@import './src/scss/lib.scss';
+.AboutBody {
+  background-color: $background-light;
+  padding: 76px 135px 128px 135px;
+  &__about--main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  &__about--main > .col1 {
+    max-width: 470px;
+  }
+  &__about--main > .col1 > h2 {
+    color: #391400;
+    margin: 20px 0 31px 0;
+  }
+  &__about--main > .col2 > p {
+    color: rgba(57, 20, 0, 0.64);
+    margin: 60px 0 81px 0;
+  }
+  &__about--main > .col2 {
+    max-width: 570px;
+  }
+  &__about--gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 128px;
+  }
+  &__about--gallery > .col2 {
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+}
