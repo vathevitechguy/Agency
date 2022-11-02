@@ -1,0 +1,7 @@
+@import './src/scss/lib.scss';
+.FaqList {
+  @include rectangle;
+  max-width: 336px;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,45 @@
+@import '../../scss/lib.scss';
+
+.Review {
+    border: 1px solid #f3d1bf;
+    border-radius: 0px 0px 6px 6px;
+    padding: 48px 51px 48px 51px;
+    width: 100%;
+    background-color: #ffffff;
+
+    @media only screen and (min-width: $bm-lg) {
+        width: 770px;
+    }
+
+    & * {
+        color: $text-dark;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 46px;
+        width: 151px;
+    }
+
+    &__text {
+        margin-bottom: 26px;
+
+        &--gray {
+            color: $text-dark-gray;
+        }
+    }
+    
+    &__portrait {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 24px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    &__author {
+        display: inline-block;
+        margin-top: 16px;
+    }
+}

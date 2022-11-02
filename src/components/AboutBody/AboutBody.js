@@ -1,22 +1,8 @@
 import React from 'react';
-import Rectangle from '../../UI/Rectangle/Rectangle';
+import { gallery, analytics } from '../../constant/script';
 import './AboutBody.scss';
 
 const AboutBody = () => {
-  const gallery = [
-    { type: 'video', src: './assets/images/About/video.png' },
-    { type: 'image', src: './assets/images/About/img1.png' },
-    { type: 'image', src: './assets/images/About/img2.png' },
-    { type: 'image', src: './assets/images/About/img3.png' },
-    { type: 'image', src: './assets/images/About/img4.png' },
-  ].map((element, i) => {
-    if (element.type === 'video') return;
-    return (
-      <div className={`gallery-img--${i + 1}`}>
-        <img src={element.src} alt="gallery-img" />
-      </div>
-    );
-  });
   return (
     <section className="AboutBody">
       <div className="AboutBody__about">
@@ -39,9 +25,29 @@ const AboutBody = () => {
         </div>
         <div className="AboutBody__about--gallery">
           <div className="col1">
-            <img src="./assets/images/About/video.png" alt="video" />
+            <img
+              src="./assets/images/About/video.png"
+              className="gallery-video"
+              alt="video"
+            />
           </div>
-          <div className="col2">{gallery}</div>
+          <div className="col2">
+            {gallery.map((element, i) => {
+              if (element.type === 'video') return;
+              return (
+                <div
+                  key={Math.random()}
+                  className={`AboutBody__about--gallery__img`}
+                >
+                  <img
+                    src={element.src}
+                    className={`gallery-img${i + 1}`}
+                    alt="gallery-img"
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <div className="AboutBody__features">
@@ -59,7 +65,7 @@ const AboutBody = () => {
           </div>
           <div className="AboutBody__features__col2">
             <div className="fbox1">
-              <img src="./assets/images/CA.png" alt="" />
+              <img src="./assets/icons/professional.png" alt="" />
               <h4>Professional</h4>
               <p>Full service range including technical skills, design.</p>
             </div>
@@ -70,9 +76,14 @@ const AboutBody = () => {
           </div>
         </div>
         <div className="AboutBody__features--analytics">
-          <Rectangle>Age</Rectangle>
-          <Rectangle>Age</Rectangle>
-          <Rectangle>Age</Rectangle>
+          {analytics.map((element, i) => {
+            return (
+              <div className="analytic_box" key={element.id}>
+                <h3>{element.figure}</h3>
+                <p>{element.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

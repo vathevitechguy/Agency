@@ -1,7 +1,7 @@
 import './NavbarMenu.scss';
 const NavbarMenu = (props) => {
   return (
-    <div class="NavbarMenu">
+    <div className="NavbarMenu">
       <span onClick={props.onClick}>
         <svg
           width="48"

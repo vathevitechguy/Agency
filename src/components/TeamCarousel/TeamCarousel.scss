@@ -1,0 +1,98 @@
+@import './src/scss/lib.scss';
+
+@mixin flexRow {
+  display: flex;
+  flex-flow: row wrap;
+}
+.TeamCarousel {
+  background-color: $background-dark;
+  padding: 96px 135px 112px 135px;
+
+  &__heading {
+    @include flexRow;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 64px;
+  }
+  &__eyebrow {
+    @include eyebrow;
+    margin-bottom: 20px;
+  }
+  &__title {
+    color: #fff;
+    max-width: 531px;
+    width: 100%;
+  }
+  &__buttons {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__buttons > img {
+    cursor: pointer;
+  }
+  &__buttons > img:last-child {
+    margin-left: 16px;
+  }
+  &__carousel {
+    width: 100%;
+  }
+  &__profiles {
+    overflow: hidden;
+    @media only screen and (min-width: $bm-lg) {
+      z-index: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media only screen and (min-width: $bm-xl) {
+      margin-bottom: 65px;
+    }
+  }
+  &__slides {
+    display: flex;
+    flex-flow: row;
+    @media only screen and (min-width: $bm-xl) {
+      // flex-flow: row wrap;
+    }
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 52px;
+  }
+  &__profile {
+    flex: 0 0 100%;
+    max-width: 470px;
+  }
+  &__scroll {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: min-content;
+    list-style: none;
+  }
+  &__dot {
+    margin: 0 10px;
+    border: 1px solid #4e4f6e;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+
+    &.is-active {
+      border: none;
+      background-color: #ef6d58;
+    }
+  }
+  @media screen and (max-width: $bm-sm) {
+    padding-left: 23px;
+    padding-right: 23px;
+    &__profile {
+      flex: 0 0 85%;
+      width: 100%;
+    }
+    &__buttons {
+      display: none;
+    }
+  }
+}

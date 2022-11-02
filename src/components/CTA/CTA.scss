@@ -15,7 +15,8 @@
     padding-top: 54.75px;
   }
   &__col1 > h1 {
-    width: 368px;
+    max-width: 368px;
+    width: 100%;
     height: 192px;
     font-family: 'Epilogue';
     font-style: normal;
@@ -62,10 +63,12 @@
         flex-flow: column-reverse wrap;
       }
       &__col1 {
+        // background-color: aqua;
         width: 100%;
         margin: 20px 0 25px;
       }
       &__col1 > h1 {
+        // background-color: red;
         font-size: 40px;
         line-height: 48px;
         width: 274px;
