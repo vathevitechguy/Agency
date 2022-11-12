@@ -2,10 +2,16 @@ import React from 'react';
 import BorderlessBtn from '../../UI/Buttons/Borderless/BorderlessBtn';
 import './CTA.scss';
 
-function CTA() {
+function CTA(props) {
+  const customStyles = props.customStyles;
+  const zIndexed = props.zIndexed;
   return (
-    <section className="CTA">
-      <div className="CTA__wrapper">
+    <section className={` CTA ${zIndexed && 'CTA__zIndexedBody'}`}>
+      <div
+        className={`CTA__wrapper ${
+          zIndexed && 'CTA__zIndexedContent'
+        } ${customStyles}`}
+      >
         <div className="CTA__col1">
           <h1>Help To Build Your Dream Project</h1>
           <p>

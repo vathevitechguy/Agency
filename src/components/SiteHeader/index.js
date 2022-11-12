@@ -1,4 +1,4 @@
-import HeaderWithMedia from '../HeroWithMedia/HeroWithMedia';
+import HeaderBody from '../HeroWithMedia/HeroWithMedia';
 import Navbar from '../NavBar/Navbar';
 import './SiteHeader.scss';
 
@@ -7,7 +7,7 @@ const SiteHeader = (props) => {
     <header className="SiteHeader">
       <div className="SiteHeader__wrapper">
         <Navbar title="Agency" />
-        <HeaderWithMedia
+        <HeaderBody
           subtitle="MODERN STUDIO"
           title="We’re Help To Build Your Dream Project"
           tagline="Agency provides a full service range including technical skills,

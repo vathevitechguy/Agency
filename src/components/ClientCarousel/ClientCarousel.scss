@@ -1,13 +1,13 @@
 @import '../../scss/lib.scss';
 
-.glide__slides {
-    list-style: none;
-}
-
 .ClientCarousel {
     &__wrapper {
         @include wrapper;
         padding-bottom: 120px;
+
+        @media only screen and (min-width: $bm-xl) {
+            padding-bottom: 152px;
+        }
     }
 
     &__container {
@@ -18,20 +18,59 @@
         @include eyebrow;
         margin-bottom: 28px;
         text-align: center;
+
+        @media only screen and (min-width: $bm-xl) {
+            margin-bottom: 31px;
+        }
     }
     
     &__title {
         @include title;
         margin-bottom: 38px;
         text-align: center;
+
+        @media only screen and (min-width: $bm-xl) {
+            margin-bottom: 67px;
+        }
+    }
+
+    &__carousel {
+        width: 100%;
     }
     
     &__reviews {
+        overflow: hidden;
         margin-bottom: 48px;
+
+        @media only screen and (min-width: $bm-lg) {
+            z-index: 0;
+            position: relative;
+            overflow: visible;
+        }
+
+        @media only screen and (min-width: $bm-xl) {
+            margin-bottom: 65px;
+        }
     }
-    
-    &__arrows {
-        display: none;
+
+    &__slides {
+        display: flex;
+        list-style: none;
+    }
+
+    &__slide {
+        flex: 0 0 100%;
+        max-width: 770px;
+
+        @media only screen and (min-width: $bm-lg) {
+            opacity: 24%;
+        }
+
+        &.is-active {
+            @media only screen and (min-width: $bm-lg) {
+                opacity: 100%;
+            }
+        }
     }
     
     &__scroll {
@@ -39,6 +78,7 @@
         justify-content: space-between;
         margin: 0 auto;
         width: min-content;
+        list-style: none;
     }
     
     &__dot {
@@ -47,126 +87,10 @@
         border-radius: 50%;
         width: 12px;
         height: 12px;
-    }
-    
-    &__dot.is-active {
-        border: none;
-        background-color: #ef6d58;
-    }
-
-    @media only screen and (min-width: $bm-lg) {
-        &__carousel {
-            position: relative;
-            margin: 0 auto;
-            width: 770px;
-        }
         
-        &__arrows {
-            z-index: 1;
-            position: absolute;
-            display: block;
-            top: 0;
-            left: calc((100% - 2310px)/2);
-            right: calc((100% - 2310px)/2);
-            height: 100%
+        &.is-active {
+            border: none;
+            background-color: #ef6d58;
         }
-    
-        &__arrow--left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: calc(50% - 385px);
-            height: 100%;
-        }
-    
-        &__arrow--right {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: calc(50% - 385px);
-            height: 100%;
-        }
-    
-        & &__reviews {
-            z-index: 0;
-            position: relative;
-            overflow: visible;
-        }
-    
-        &__reviews .glide__slide {
-            opacity: 24%;
-
-            &--active {
-                opacity: 100%;
-            }
-        }
-    }
-
-    @media only screen and (min-width: $bm-xl) {
-        &__wrapper {
-            padding-bottom: 152px;
-        }
-        
-        &__title {
-            margin-bottom: 31px;
-        }
-        
-        &__heading {
-            margin-bottom: 67px;
-        }
-        
-        &__reviews {
-            margin-bottom: 65px;
-        }
-    }
-}
-
-
-
-
-
-
-
-.c-review {
-    border: 1px solid #f3d1bf;
-    border-radius: 0px 0px 6px 6px;
-    padding: 48px 51px 48px 51px;
-    width: 100%;
-    background-color: #ffffff;
-
-    @media only screen and (min-width: $bm-lg) {
-        width: 770px;
-    }
-
-    & * {
-        color: $text-dark;
-    }
-
-    &__rating {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 46px;
-        width: 151px;
-    }
-
-    &__text {
-        margin-bottom: 26px;
-
-        &--gray {
-            color: $text-dark-gray;
-        }
-    }
-    
-    &__portrait {
-        display: inline-block;
-        vertical-align: bottom;
-        margin-right: 24px;
-        width: 80px;
-        height: 80px;
-    }
-    
-    &__author {
-        display: inline-block;
-        margin-top: 16px;
     }
 }

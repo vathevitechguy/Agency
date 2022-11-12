@@ -1,0 +1,46 @@
+@import './src/scss/lib.scss';
+.Partners {
+  background-color: $background-dark;
+  padding: 20px 135px 20px 135px;
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &__logo {
+    margin: 20px;
+    height: auto;
+    width: auto;
+    &:nth-child(1) {
+      max-width: 147px;
+      max-height: 42px;
+    }
+    &:nth-child(2) {
+      max-width: 108px;
+      max-height: 32px;
+    }
+    &:nth-child(3) {
+      max-width: 119px;
+      max-height: 47px;
+      transform: translateY(-15px);
+    }
+    &:nth-child(4) {
+      max-width: 86px;
+      max-height: 21px;
+    }
+    &:nth-child(5) {
+      max-width: 126px;
+      max-height: 24px;
+    }
+  }
+  @media screen and (max-width: $bm-xl) {
+    padding-left: 23px;
+    padding-right: 23px;
+    &__wrapper {
+      justify-content: space-evenly;
+    }
+    &__logo {
+      margin: 40px;
+    }
+  }
+}

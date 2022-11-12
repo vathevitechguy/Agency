@@ -1,0 +1,38 @@
+@import './src/scss/lib.scss';
+.FaqList {
+  @include rectangle;
+  background-color: $background-dark;
+  border-color: #3a3c56;
+  &.is-active {
+    background-color: #fff !important;
+
+    h4 {
+      color: #391400;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    h4 {
+      color: #fff;
+      width: auto;
+      @media screen and (max-width: $bm-xl) {
+        max-width: 266px;
+        width: 100%;
+      }
+    }
+    img {
+      display: block;
+      justify-content: flex-end;
+    }
+  }
+  &__content {
+    margin-top: 36px;
+    color: rgba(57, 20, 0, 0.64);
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+  }
+}

@@ -1,0 +1,21 @@
+@import './src/scss/lib.scss';
+.Profile {
+  &__image__contianer {
+    @include rectangle;
+    border-radius: 6px;
+    border-color: #3a3c56;
+    max-width: 272px;
+    display: flex;
+    justify-content: center;
+    padding: 50px auto;
+    padding-bottom: 0;
+    align-self: center;
+  }
+  &__name {
+    color: #fff;
+    margin: 26px 0 6px 0;
+  }
+  &__jobtitle {
+    color: rgba(255, 255, 255, 0.64);
+  }
+}

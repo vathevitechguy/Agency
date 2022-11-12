@@ -1,0 +1,31 @@
+@import './src/scss/lib.scss';
+.FAQs {
+  background-color: $background-dark;
+  padding: 86px 335px 112px 335px;
+
+  &__title {
+    color: #fff;
+    margin: 17px 0 31px 0;
+  }
+  &__text {
+    color: rgba(255, 255, 255, 0.64);
+    max-width: 770px;
+    width: 100%;
+    margin-bottom: 65px;
+  }
+  &__listWrapper > .FaqList:first-child {
+    border-radius: 6px 6px 0px 0px;
+  }
+  &__listWrapper > .FaqList:last-child {
+    border-radius: 0 0 6px 6px;
+  }
+
+  @media screen and (max-width: $bm-lg) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  @media (min-width: $bm-lg) and (max-width: $bm-xxl) {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
