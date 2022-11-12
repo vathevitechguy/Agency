@@ -1,6 +1,7 @@
 @import './src/scss/lib.scss';
 .FaqList {
   @include rectangle;
+<<<<<<< HEAD
   background-color: $background-dark;
   border-color: #3a3c56;
   &.is-active {
@@ -35,4 +36,9 @@
     transition: transform 0.5s ease-in;
     -webkit-transition: transform 0.5s ease-in;
   }
+=======
+  max-width: 336px;
+  width: 100%;
+  height: auto;
+>>>>>>> 31e2bdf6854e6291abf1670d823f41674e39406f
 }

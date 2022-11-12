@@ -93,10 +93,17 @@
 
   @media screen and (max-width: 375px) {
     &__top {
+<<<<<<< HEAD
       display: grid;
       grid-template-columns: 4fr;
       margin-bottom: 2rem;
       text-align: center;
+=======
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 2rem;
+>>>>>>> 31e2bdf6854e6291abf1670d823f41674e39406f
     }
 
     &__bottom {
