@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import './Faqs.scss';
 import { FAQS } from '../../constant/script';
 import FaqList from './FaqList';
@@ -29,11 +28,6 @@ const Faqs = () => {
       </div>
     </section>
   );
-=======
-
-const Faqs = () => {
-  return <div>Faqs</div>;
->>>>>>> 31e2bdf6854e6291abf1670d823f41674e39406f
 };
 
 export default Faqs;

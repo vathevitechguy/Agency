@@ -67,40 +67,42 @@
 
   @media screen and (max-width: $bm-sm) {
     padding: 100px 23px 92px 23px;
-    .CTA {
-      padding: auto;
-      &__wrapper {
-        padding: 29px;
-        flex-flow: column-reverse wrap;
-      }
-      &__col1 {
-        // background-color: aqua;
-        width: 100%;
-        margin: 20px 0 25px;
-      }
-      &__col1 > h1 {
-        // background-color: red;
-        font-size: 40px;
-        line-height: 48px;
-        width: 274px;
-        height: 144px;
-      }
-      &__col1 > p {
-        max-width: 273px;
-        height: 127px;
+    padding: auto;
+    &__wrapper {
+      padding: 29px;
+      flex-flow: column-reverse wrap;
+    }
+    &__col1 {
+      // background-color: aqua;
+      width: 100%;
+      margin: 20px 0 25px;
+    }
+    &__col1 > h1 {
+      // background-color: red;
+      font-size: 40px;
+      line-height: 48px;
+      width: 274px;
+      height: 144px;
+    }
+    &__col1 > p {
+      max-width: 273px;
+      height: 127px;
 
-        font-size: 16px;
-        line-height: 32px;
-      }
-      &__col2 {
-        width: 100%;
-        margin-top: 3px;
-      }
-      &__col2 > img {
-        max-width: 300px;
-        width: 100%;
-        height: auto;
-      }
+      font-size: 16px;
+      line-height: 32px;
+    }
+    &__col2 {
+      width: 100%;
+      margin-top: 3px;
+    }
+    &__col2 > img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+    &__zIndexedBody {
+      max-height: 820px !important;
+      height: auto !important;
     }
   }
 }

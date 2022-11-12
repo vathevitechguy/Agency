@@ -115,4 +115,69 @@ export const Profiles = [
     jobTitle: 'Product Designer',
     imgSrc: './assets/images/team/izabella.png',
   },
+  {
+    fullName: 'Roelof Bekkenenks',
+    jobTitle: 'React Developer',
+    imgSrc: './assets/images/team/roelof.png',
+  },
+  {
+    fullName: 'Leonardo Oliveira',
+    jobTitle: 'Illustrator',
+    imgSrc: './assets/images/team/leonardo.png',
+  },
+];
+
+export const FAQS = [
+  {
+    id: 'faq1',
+    title: 'A digital agency is a business',
+    content:
+      'Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business. Digital marketing efforts, instead of handling in-house.',
+  },
+  {
+    id: 'faq2',
+    title: 'Hire to outsource your digital',
+    content:
+      'Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business. Digital marketing efforts, instead of handling in-house.',
+  },
+  {
+    id: 'faq3',
+    title: 'Marketing efforts',
+    content:
+      'Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business. Digital marketing efforts, instead of handling in-house.',
+  },
+  {
+    id: 'faq4',
+    title: 'Can provide your business',
+    content:
+      'Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business. Digital marketing efforts, instead of handling in-house.',
+  },
+];
+
+export const BrandPartners = [
+  {
+    id: 'p1',
+    logoSrc: './assets/images/Partners/digitalside.png',
+    companyName: 'Digital Side',
+  },
+  {
+    id: 'p2',
+    logoSrc: './assets/images/Partners/vortex.png',
+    companyName: 'Vortex',
+  },
+  {
+    id: 'p3',
+    logoSrc: './assets/images/Partners/travelexp.png',
+    companyName: 'Travel Explorer',
+  },
+  {
+    id: 'p4',
+    logoSrc: './assets/images/Partners/fuzion.png',
+    companyName: 'Fuzion',
+  },
+  {
+    id: 'p5',
+    logoSrc: './assets/images/Partners/mediafury.png',
+    companyName: 'Media Fury',
+  },
 ];

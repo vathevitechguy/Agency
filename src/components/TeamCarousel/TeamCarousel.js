@@ -1,10 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-<<<<<<< HEAD
 import { FAQS, Profiles } from '../../constant/script';
-=======
-import { Profiles } from '../../constant/script';
->>>>>>> 31e2bdf6854e6291abf1670d823f41674e39406f
 import Profile from '../Profile/Profile';
 import './TeamCarousel.scss';
 import ClassNames from 'embla-carousel-class-names';
