@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Link, Navigate, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Navbar from './components/NavBar/Navbar';
 import SiteFooter from './components/SiteFooter';
@@ -24,6 +24,9 @@ function App() {
             <Fragment>
               <div className="notfound">
                 <h3>Error 404. Page Not Found!</h3>
+                <p>
+                  Click <Link to="index">Here</Link> to go to Home Page
+                </p>
               </div>
               <SiteFooter />
             </Fragment>
