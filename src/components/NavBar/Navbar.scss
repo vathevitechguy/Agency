@@ -1,7 +1,13 @@
-@import './src/scss/lib.scss';
+@import '../../scss/lib.scss';
 .Navbar {
   transform: translateY(-5px);
   z-index: 10;
+  background-color: $background-dark;
+  color: $text-light;
+
+  &__active {
+    color: $text-accent !important;
+  }
 
   &__logo {
     float: left;

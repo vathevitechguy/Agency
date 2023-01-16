@@ -4,6 +4,7 @@ import BrandLogo from '../Brand/Brand';
 import './Navbar.scss';
 import NavbarMenu from '../NavMenu/NavbarMenu';
 import ToggledNavbar from '../ToggledNavbar/ToggledNavbar';
+import { NavLink } from 'react-router-dom';
 const Navbar = (props) => {
   const [toggleNavMenu, setToggleNavMenu] = useState(false);
   const openNavMenuHandler = (e) => {
@@ -22,16 +23,36 @@ const Navbar = (props) => {
           </div>
           <ul>
             <li>
-              <a href="#">About</a>
+              <NavLink
+                className={({ isActive }) => (isActive ? 'Navbar__active' : '')}
+                to="about-us"
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <a href="#">Services</a>
+              <NavLink
+                className={({ isActive }) => (isActive ? 'Navbar__active' : '')}
+                to="services"
+              >
+                Services
+              </NavLink>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <NavLink
+                className={({ isActive }) => (isActive ? 'Navbar__active' : '')}
+                to="pricing"
+              >
+                Pricing
+              </NavLink>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <NavLink
+                className={({ isActive }) => (isActive ? 'Navbar__active' : '')}
+                to="blog"
+              >
+                Blog
+              </NavLink>
             </li>
           </ul>
 
