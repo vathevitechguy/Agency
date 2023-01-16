@@ -13,6 +13,9 @@
 .nav-tab {
   cursor: pointer;
 }
+.nav-tab > .active {
+  color: $text-accent;
+}
 .contactBtn-custom {
   color: $background-dark !important;
   border-color: $background-dark !important;

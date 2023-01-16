@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import BorderedBtn from '../../UI/Buttons/Bordered/BorderedBtn';
 import './ToggledNavbar.scss';
 
@@ -19,10 +20,38 @@ const ToggledNavbar = (props) => {
           </svg>
         </span>
         <ul class="nav-tabs">
-          <li class="nav-tab">About</li>
-          <li class="nav-tab">Services</li>
-          <li class="nav-tab">Pricing</li>
-          <li class="nav-tab">Blog</li>
+          <li class="nav-tab">
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              to="about-us"
+            >
+              About
+            </NavLink>
+          </li>
+          <li class="nav-tab">
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              to="services"
+            >
+              Services
+            </NavLink>
+          </li>
+          <li class="nav-tab">
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              to="pricing"
+            >
+              Pricing
+            </NavLink>
+          </li>
+          <li class="nav-tab">
+            <NavLink
+              className={({ isActive }) => (isActive ? 'active' : '')}
+              to="blog"
+            >
+              Blog
+            </NavLink>
+          </li>
           <li class="nav-tab">
             <BorderedBtn customStyle="contactBtn-custom" type="button">
               Contact

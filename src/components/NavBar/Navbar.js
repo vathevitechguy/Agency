@@ -19,7 +19,9 @@ const Navbar = (props) => {
       <nav className="Navbar">
         <div className="Navbar__wrapper">
           <div className="Navbar__logo">
-            <BrandLogo title={props.title} />
+            <NavLink to="index">
+              <BrandLogo title={props.title} />
+            </NavLink>
           </div>
           <ul>
             <li>

@@ -1,5 +1,7 @@
 @import './src/scss/lib.scss';
 .BrandLogo {
+  text-decoration: none;
+  color: $text-light;
   &__logo * {
     display: inline-block !important;
   }

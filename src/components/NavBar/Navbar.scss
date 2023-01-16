@@ -1,9 +1,10 @@
 @import '../../scss/lib.scss';
 .Navbar {
-  transform: translateY(-5px);
+  // transform: translateY(-5px);
   z-index: 10;
   background-color: $background-dark;
   color: $text-light;
+  // padding-top: 10px;
 
   &__active {
     color: $text-accent !important;
@@ -21,7 +22,7 @@
   &__wrapper {
     margin: auto;
     text-align: center;
-    width: 80%;
+    width: 83%;
   }
   @media (max-width: $bm-xl) {
     &__wrapper {
@@ -64,7 +65,7 @@
   &__wrapper li a {
     color: #fff;
     display: block;
-    height: 50px;
+    height: 40px;
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 16px;
