@@ -15,7 +15,7 @@ const defaultContent = DUMMY_DATA.map((card, index) => {
           title={datum.title}
           tagType={datum.type}
           img={datum.img}
-          cardSize="full"
+          // cardSize="full"
         />
       );
     } else
@@ -25,7 +25,7 @@ const defaultContent = DUMMY_DATA.map((card, index) => {
           title={datum.title}
           tagType={datum.type}
           img={datum.img}
-          cardSize="medium"
+          // cardSize="medium"
         />
       );
   });
