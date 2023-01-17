@@ -11,14 +11,17 @@
     margin-left: 17px;
   }
   &__description > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
     margin: 0;
     color: $text-light-gray;
-    line-height: 2em;
-    letter-spacing: 0.7px;
   }
   &__description > h5 {
     margin: 0 0 0 6px;
     letter-spacing: 1px;
     font-weight: normal;
+    color: $text-light !important;
   }
 }
