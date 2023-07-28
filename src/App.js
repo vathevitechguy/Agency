@@ -28,8 +28,9 @@ function App() {
         { path: 'about-us', element: <AboutUs /> },
         {
           path: 'services',
-          element: <Link to="/services/portfolio">View Portfolio</Link>,
-          // children: [{ path: '/services/portfolio', element: <Portfolio /> }],
+          element: <Portfolio />,
+          // <Link to="portfolio">View Portfolio</Link>,
+          // children: [{ path: 'portfolio', element: <Portfolio /> }],
         },
         { path: 'blog', element: <Blog /> },
       ],
@@ -38,28 +39,6 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
-      {/* 
-      <Routes>
-        <Route path="/" element={<Navigate replace to="index" />} />
-        <Route path="/index" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/services" element={<Portfolio />}></Route>
-        <Route path="/blog" element={<Blog />} />
-        <Route
-          path="*"
-          element={
-            <Fragment>
-              <div className="notfound">
-                <h3>Error 404. Page Not Found!</h3>
-                <p>
-                  Click <Link to="index">Here</Link> to go to Home Page
-                </p>
-              </div>
-              <SiteFooter />
-            </Fragment>
-          }
-        />
-      </Routes> */}
     </div>
   );
 }

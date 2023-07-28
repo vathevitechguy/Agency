@@ -6,7 +6,7 @@ import SiteFooter from '../components/SiteFooter';
 const Error = () => {
   return (
     <Fragment>
-      <Navbar title="agency" />
+      <Navbar title="Agency" />
       <div className="notfound">
         <h3>Error 404. Page Not Found!</h3>
         <p>
